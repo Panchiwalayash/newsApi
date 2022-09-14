@@ -54,7 +54,7 @@ router.post('/login',[
         const user=await User.findOne({email:req.body.email})  
             if(!user){
                 success=false
-                res.status(400).send("user not found")
+                res.status(400).json("user not found")
             } 
 
         const validPassword=await bycrpt.compare(req.body.password,user.password)
@@ -63,8 +63,8 @@ router.post('/login',[
             res.status(400).json("Invalid authentication")
         }
         success=true;
-        res.status(200).send({user,success})
-    } catch (error) {s
+        res.status(200).json({user,success})
+    } catch (error) {
         res.status(500).json(error,"Some error occured")
     }
 })
