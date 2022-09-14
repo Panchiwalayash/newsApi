@@ -1,0 +1,80 @@
+.login-page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../public/images/back.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 300px !important;
+    min-width: 250px ;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 30px 35px;
+    background-color: rgba(255,255,255,0.13);
+}
+.login-head{
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 2;
+}
+.login-section{
+    height: 60%;
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+.login-entry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login-entry input{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    color: rgb(38, 38, 38);
+    font-size: 16px;
+}
+.login-entry label{
+    font-size: 20px;
+}
+.login-entry input:focus{
+    outline: none;
+}
+.btn-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-button,.Sign-button{
+    margin: 5px 10px;
+    margin-top: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(6, 37, 66);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+.login-button:hover,.Sign-button:hover{
+    transform: scale(1.1);
+}

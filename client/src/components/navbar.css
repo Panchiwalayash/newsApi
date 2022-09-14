@@ -1,0 +1,25 @@
+.navbar{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    margin: 10px 20px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+}
+.logout-btn{
+    margin: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(221, 47, 47);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logout-btn:hover{
+    background-color: rgb(245, 18, 18);
+}

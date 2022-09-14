@@ -1,0 +1,13 @@
+
+.welcome-home{
+    text-align: center;
+    font-size: 3.5vmin;
+    margin: 5vh 0;
+    font-weight: 600;
+    color: black;
+}
+.news-element{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
